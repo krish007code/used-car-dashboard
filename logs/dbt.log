@@ -1,0 +1,73 @@
+[0m13:17:19.872262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa71f8b2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7216d4f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa71e2479d0>]}
+
+
+============================== 13:17:19.874574 | 3f903e58-3cef-4da5-826b-d10daed11c0f ==============================
+[0m13:17:19.874574 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:17:19.874951 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'invocation_command': 'dbt init used_car_dashboard', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_path': 'logs', 'no_print': 'None', 'profiles_dir': '/home/krish/.dbt', 'use_colors': 'True', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'quiet': 'False'}
+[0m13:17:19.880706 [debug] [MainThread]: Starter project path: /home/krish/used-car-dashboard/venv/lib64/python3.14/site-packages/dbt/include/starter_project
+[0m13:17:19.881993 [info ] [MainThread]: Setting up your profile.
+[0m13:17:22.782488 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m13:17:22.783075 [info ] [MainThread]: dbt version: 1.12.5
+[0m13:17:22.783377 [info ] [MainThread]: python version: 3.14.7
+[0m13:17:22.783654 [info ] [MainThread]: python path: /home/krish/used-car-dashboard/venv/bin/python3
+[0m13:17:22.783901 [info ] [MainThread]: os info: Linux-7.1.10-200.fc44.x86_64-x86_64-with-glibc2.43
+[0m13:17:22.820654 [info ] [MainThread]: Using profiles dir at /home/krish/.dbt
+[0m13:17:22.820982 [info ] [MainThread]: Using profiles.yml file at /home/krish/.dbt/profiles.yml
+[0m13:17:22.821165 [info ] [MainThread]: Using dbt_project.yml file at /home/krish/used-car-dashboard/used_car_dashboard/dbt_project.yml
+[0m13:17:22.822056 [info ] [MainThread]: adapter type: duckdb
+[0m13:17:22.822258 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:17:22.887536 [info ] [MainThread]: Configuration:
+[0m13:17:22.887878 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:17:22.888077 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:17:22.888267 [info ] [MainThread]: Required dependencies:
+[0m13:17:22.888447 [debug] [MainThread]: Executing "git --help"
+[0m13:17:22.890290 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:17:22.890589 [debug] [MainThread]: STDERR: "b''"
+[0m13:17:22.890775 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:17:22.890938 [info ] [MainThread]: Connection:
+[0m13:17:22.891106 [info ] [MainThread]:   database: dev
+[0m13:17:22.891282 [info ] [MainThread]:   schema: main
+[0m13:17:22.891444 [info ] [MainThread]:   path: dev.duckdb
+[0m13:17:22.891636 [info ] [MainThread]:   config_options: None
+[0m13:17:22.891819 [info ] [MainThread]:   extensions: None
+[0m13:17:22.891974 [info ] [MainThread]:   settings: {}
+[0m13:17:22.892123 [info ] [MainThread]:   external_root: .
+[0m13:17:22.892270 [info ] [MainThread]:   use_credential_provider: None
+[0m13:17:22.892424 [info ] [MainThread]:   attach: None
+[0m13:17:22.892581 [info ] [MainThread]:   filesystems: None
+[0m13:17:22.892729 [info ] [MainThread]:   remote: None
+[0m13:17:22.892878 [info ] [MainThread]:   plugins: None
+[0m13:17:22.893025 [info ] [MainThread]:   disable_transactions: False
+[0m13:17:22.893296 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m13:17:22.952804 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:17:22.965573 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:17:22.965867 [debug] [MainThread]: On debug: select 1 as id
+[0m13:17:22.966037 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:17:22.975718 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m13:17:22.976334 [debug] [MainThread]: On debug: Close
+[0m13:17:22.976576 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:17:22.976774 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:17:22.977000 [info ] [MainThread]: Your new dbt project "used_car_dashboard" was created!
+Initialized new project in /home/krish/used-car-dashboard/used_car_dashboard/used_car_dashboard
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:17:22.978994 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.212032, "process_in_blocks": "2040", "process_kernel_time": 0.096486, "process_mem_max_rss": "163100", "process_out_blocks": "192", "process_user_time": 1.135839}
+[0m13:17:22.979314 [debug] [MainThread]: Command `dbt init` succeeded at 13:17:22.979256 after 3.21 seconds
+[0m13:17:22.979506 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:17:22.979716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa71e0ffbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa714105490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa71423af10>]}
+[0m13:17:22.979953 [debug] [MainThread]: Flushing usage events
+[0m13:17:25.131949 [debug] [MainThread]: An error was encountered while trying to flush usage events
