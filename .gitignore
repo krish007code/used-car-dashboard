@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# dbt
+used_car_dashboard/target/
+used_car_dashboard/logs/
+used_car_dashboard/dbt_packages/
+used_car_dashboard/dev.duckdb
+used_car_dashboard/.user.yml
+
+# Data (raw is reproducible from source; clean/ is a regenerable intermediate)
+raw/used_cars.csv
+clean/*.parquet
+
+# OS junk
+.DS_Store
+
+# add this line
+logs/

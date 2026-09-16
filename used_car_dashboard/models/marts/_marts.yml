@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: mart_market_overview
+    description: Row-level listings for price distribution, body-type volume, and price-by-year charts
+    columns:
+      - name: price_rub
+        tests:
+          - not_null
+
+  - name: mart_brand_performance
+    description: Aggregated by mark/model/generation — avg, median, min, max price and listing counts
+    columns:
+      - name: mark
+        tests:
+          - not_null
+      - name: listing_count
+        tests:
+          - not_null
+
+  - name: mart_geography
+    description: Aggregated by region — price stats and listing volume
+    columns:
+      - name: region
+        tests:
+          - not_null
+          - unique
+      - name: listing_count
+        tests:
+          - not_null
+
+  - name: mart_value_drivers
+    description: Row-level listings for value-driver scatter plots (mileage, owners, power, displacement vs price)
+    columns:
+      - name: price_rub
+        tests:
+          - not_null

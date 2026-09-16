@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_files
+    description: Cleaned Parquet output from the Polars transform script
+    meta:
+      external_location: "{{ env_var('DBT_PROJECT_ROOT', '..') }}/clean/used_cars_clean.parquet"
+    tables:
+      - name: used_cars_clean

@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_used_cars
+    description: Cleaned, Russia-filtered used car listings, one row per listing
+    columns:
+      - name: price_rub
+        description: Listing price in Russian rubles
+        tests:
+          - not_null
+      - name: region
+        description: Russian federal subject where the car is listed
+        tests:
+          - not_null
+      - name: mark
+        description: Vehicle brand
+        tests:
+          - not_null
+      - name: country
+        description: Country of listing (filtered to Russia only at this layer)
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["Russia"]
+      - name: steering_wheel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["LEFT", "RIGHT"]
+      - name: is_current_generation
+        description: "True if super_gen_year_to was null in source, implying the generation is still in production"
